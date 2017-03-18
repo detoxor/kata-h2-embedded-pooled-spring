@@ -1,5 +1,5 @@
-# Kata H2 + Spring používající nativní přístup a je poolovan
-Nejjednodušší integrace H2 a Spring používající nativní přístup konfigurace H2 via xml s tím, že jdbc-template je nyní poolovana - formou ukázky/příkladu, viz odkaz: [URL2].
+# Kata H2 + Spring používající nativní přístup a je poolován
+Nejjednodušší integrace H2 a Spring používající nativní přístup konfigurace H2 via xml s tím, že jdbc-template je nyní poolována - formou ukázky/příkladu, viz odkaz: [URL2].
 
 Projekt lze snadno spustit:
 
