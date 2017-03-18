@@ -14,6 +14,19 @@
     <bean id="personDao" class="cz.tc.learn.h2.dao.PersonDaoImpl">
         <property name="dataSource" ref="dataSource" />
     </bean>
+
+    <bean id="dbcpDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="dbcpDataSource" />
+    </bean>
+
+    <context:property-placeholder location="jdbc.properties"/>
     
     <jdbc:embedded-database id="dataSource" type="H2">
         <jdbc:script location="classpath:schema.sql" />

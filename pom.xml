@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cz.tc.learn.h2</groupId>
-  <artifactId>kata-h2-embedded-spring</artifactId>
+  <artifactId>kata-h2-embedded-pooled-spring</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>kata-h2-embedded-spring</name>
+  <name>kata-h2-embedded-pooled-spring</name>
   <url>http://maven.apache.org</url>
 
   
